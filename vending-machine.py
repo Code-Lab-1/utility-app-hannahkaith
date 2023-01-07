@@ -1,3 +1,5 @@
+#VENDING MACHINE!
+
 #greetings
 #print method is used to show greetings and optionss
 print("⋆﹥━━━━━━━━━━━━━━━﹤⋆")
@@ -9,7 +11,7 @@ print("⋆﹥━━━━━━━━━━━━━━━﹤⋆\n")
 
 
 #if-else method determines whether a drink will be purchased by the user or not
-ans1 = input()
+ans1 = input() #a variable to store the answer to whether the user wants a drink or not
 if ans1 == '1': #if '1' is chosen, this would be printed ↓
     print("That's great, then! \n")
 elif ans1 == '2': #if '2' is chosen, this would be printed ↓
@@ -31,38 +33,38 @@ for drink in drinks: #'for loop' is used to print each item on a new line
 
 #suggestions made for chosen drink 
 #if-else method is used to print out suggestions and questions
-drink = input()
+drink = input() #a variable to store the chosen drink
 if drink == 'a': #if 'a' is chosen, this would be printed ↓
         print("Great choice! this would pair nicely with a yanyan!")
         print("Would you like to buy a snack?\n\n 1. Yes! / 2. No thanks")
-        drink = 'Coldwater'
-elif drink == 'b':
+        drink = 'Coldwater' #the variable will then be replaced with 'Coldwater'
+elif drink == 'b':  #if 'b' is chosen, this would be printed ↓
         print("Great choice! You could pair this with a pocky nicely!")
         print("Would you like to buy a snack?\n\n 1. Yes! / 2. No thanks")
-        drink = 'Iced Tea'
-elif drink == 'c':
+        drink = 'Iced Tea' #the variable will then be replaced with 'Iced Tea'
+elif drink == 'c':  #if 'c' is chosen, this would be printed ↓
         print("Great choice! this would pair nicely with milk bread!")
         print("Would you like to buy a snack?\n\n 1. Yes! / 2. No thanks")
-        drink = 'Iced Coffee'        
-elif drink == 'd':
+        drink = 'Iced Coffee' #the variable will then be replaced with 'Iced Coffee'        
+elif drink == 'd':  #if 'd' is chosen, this would be printed ↓
         print("Great choice! You could pair this with hazelnut wafers nicely!")
         print("Would you like to buy a snack?\n\n 1. Yes! / 2. No thanks")
-        drink = 'Cola'
-elif drink == 'e':
+        drink = 'Cola' #the variable will then be replaced with 'Cola'
+elif drink == 'e':  #if 'e' is chosen, this would be printed ↓
         print("Great choice! this would pair nicely with a choco pie!")
         print("Would you like to buy a snack?\n\n 1. Yes! / 2. No thanks")
-        drink = 'Melon Soda'
-elif drink == 'f':
+        drink = 'Melon Soda' #the variable will then be replaced with 'Melon Soda'
+elif drink == 'f':  #if 'f' is chosen, this would be printed ↓
         print("Great choice! You could pair this with a matcha flavoured kitkat nicely!")
         print("Would you like to buy a snack?\n\n 1. Yes! / 2. No thanks")
-        drink = 'Banana Milk'
+        drink = 'Banana Milk' #the variable will then be replaced with 'Banana Milk'
 else: #should any option not be chosen, this would be printed ↓
     print("Oh no! Please try again. This time, choose one of the options!")
-    quit() #this immediately terminates the program if the user chooses an option not provided.
+    quit() #this immediately terminates the program 
 
 
 #snack choices
-ans3 = input() #a variable to store the whether the user wants a snack or not
+ans3 = input() #a variable to store the answer to whether the user wants a snack
 if ans3 == '1':
     snacks = [" i. Matcha KitKat           $2", " ii. Choco Pie              $2",
     " iii. Yan Yan               $3", " iv. Cookies n Cream Pocky  $3", " v. Hazelnut Wafers         $3 ", 
@@ -85,7 +87,7 @@ if ans3 == '1':
         snack = 'Milk Bread'
     else: #should any option not be chosen, this would be printed ↓
         print("Oh no! Please try again. This time, choose one of the options!")
-        quit() #this immediately terminates the program if the user chooses an option not provided.
+        quit() #this immediately terminates the program 
     print("Great!")
     
     drinkchoice = int(input("Enter the price of the drink chosen here -> ")) #the drinks' price is stored in this variable
@@ -128,4 +130,4 @@ elif ans3 == '2':
         print("Oopsies! that's not enough money :<")
 else: #should any option not be chosen, this would be printed ↓
     print("Oh no! Please try again. This time, choose one of the options!")
-    quit() #this immediately terminates the program if the user chooses an option not provided.
+    quit() #this immediately terminates the program 
