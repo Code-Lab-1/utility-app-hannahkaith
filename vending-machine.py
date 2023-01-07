@@ -1,7 +1,7 @@
 #VENDING MACHINE!
 
 #GREETINGS
-#print method is used to show greetings, options and responses
+#print method is used to show greetings, options, and responses
 print("⋆﹥━━━━━━━━━━━━━━━﹤⋆")
 print("Hey there! ♥")
 print("Can we offer you a beverage that would surely satiate your thirst? \n(Choose one of the options to answer!)\n")
@@ -10,10 +10,10 @@ print("⋆﹥━━━━━━━━━━━━━━━﹤⋆\n")
 
 
 
-#if-else method determines whether a drink will be purchased by the user or not
 ans1 = input() #a variable to store the answer to whether the user wants a drink or not
+#if-else method determines whether a drink will be purchased by the user or not
 if ans1 == '1': #if '1' is chosen, this would be printed ↓
-    print("That's great, then! \n")
+    print("That's great! \n")
 elif ans1 == '2': #if '2' is chosen, this would be printed ↓
     print("Alright! Have a nice day.")
     quit() #this immediately terminates the program
@@ -64,7 +64,7 @@ else: #should any option not be chosen, this would be printed ↓
 
 
 #snack choices
-ans3 = input() #a variable to store the answer to whether the user wants a snack
+ans3 = input() #a variable to store the answer to whether the user wants a snack or not
 if ans3 == '1':
     snacks = [" i. Matcha KitKat           $2", " ii. Choco Pie              $2",
     " iii. Yan Yan               $3", " iv. Cookies n Cream Pocky  $3", " v. Hazelnut Wafers         $3 ", 
@@ -117,6 +117,8 @@ elif ans3 == '2':
     drinkchoice = int(input("Enter the price of the drink chosen here -> ")) #the drinks' price is stored in this variable
     money = int(input("Enter the amount of money: ")) #this variable stores the money of the user
     change = int(money) - int(drinkchoice) #this variable stores the change
+
+    #if-else determines if there is change from the given amount
     if money == drinkchoice: #if 'money' is equals to the drinks' price, this would be printed ↓
         print("⋆﹥━━━━━━━━━━━━━━━﹤⋆")
         print("Enjoy your food and have a splendid day!\n")
